@@ -53,6 +53,7 @@ string ZorkFinal::get_combo_target(){
     QString qs = ui->comboBox_availableTarget->currentText();
     return qs.toLocal8Bit().constData();
 }
+
 //GO
 void ZorkFinal::on_pushButton_goNorth_clicked()
 {
@@ -106,4 +107,26 @@ void ZorkFinal::set_textB_desc(string message){
     // Does not work like that.
     // Every cout must be printed in a file
     // And this file can be the source the textBrowser reads and displays
+}
+
+QStringList get_Item_List(){
+    QStringList IList;
+    // get the short description of all items in inventory and room and add them to IList
+    return IList;
+}
+QStringList get_Enemy_List(){
+    QStringList EList;
+    // get the name of all enemies in the room and add them to EList
+    return EList;
+}
+void update_Inventory(QStringList IList){
+    //Remove everything from listWidget_itemsInInventory"
+    //Remove everything from comboBox_itemToUse
+    //Remove everything from comboBox_itemToUseWith
+    //Add IList to all of them
+}
+void update_Enemy(QStringList EList){
+    //Remove everything from listWidget_enemiesNear    //Remove everything from comboBox_itemToUse
+    //Remove everything from comboBox_availableTarget
+    //Add EList to all of them
 }

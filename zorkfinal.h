@@ -54,7 +54,10 @@ private slots:
     //MAIN DISPLAY
     void set_textB_desc(string message);        //mimicks cout
 
-
+    QStringList get_Item_List();
+    QStringList get_Enemy_List();
+    void update_Inventory(QStringList IList);
+    void update_Enemy(QStringList EList);
 
 private:
     Ui::ZorkFinal *ui;
