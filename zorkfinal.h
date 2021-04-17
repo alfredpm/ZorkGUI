@@ -11,6 +11,12 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class ZorkFinal; }
 QT_END_NAMESPACE
 
+#ifndef ZORKUL_H
+#include "ZorkUL.h"
+#endif //ZORKUL_H
+
+extern ZorkUL *game;
+
 class ZorkFinal : public QMainWindow
 {
     Q_OBJECT

@@ -5,7 +5,7 @@
 
 
 Room *currentRoom;
-ZorkUL game;        //Should not be there, but I don't have the time to find a clean solution
+ZorkUL *game;        //Should not be there, but I don't have the time to find a clean solution
 
 int main(int argc, char *argv[])
 {
